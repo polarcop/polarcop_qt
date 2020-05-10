@@ -5,7 +5,10 @@ This version of quick tasks supports builds from `1.0.16` onwards and supports b
 
 Polar Cop quick tasks allows anyone to quickly create and start tasks for Polar Cop's iOS platform. 
 
-### Format
+### Supported Sites
+- [Yeezy Supply](#yeezysupply)
+
+## Format
 Polar Cop `QT`& `PT` requests must be passed as url query parameters to the `qt.polarcop.com`domain.
 *(URL chaining is supported)*
 ```http
@@ -24,9 +27,6 @@ https://qt.polarcop.com?<parameters_here>
 | `category`|  Product Category         | Optional               |  *site dependant*    |
 | `mode`    |  Task mode                | Optional               |  *site dependant*    |
 | `start`   |  Should Tasks Auto Start  | Optional               |  `true`              |
-
-### Supported Sites
-- [Yeezy Supply](#yeezysupply)
 
 ## YeezySupply
 | Allowed | Parameter | Notes
