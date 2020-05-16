@@ -72,7 +72,7 @@ e.g https://www.yeezysupply.com/product/FW6345
 e.g https://www.solebox.com/en_GB/p/adidas_consortium-424_pro_model-bntora-01808119.html?chosen=size&dwvar_01808119_212=45%201%2F3
 
 [SID]: ==> https://qt.polarcop.com/solebox?pid={{product_size_id}}
-       ==> https://qt.polarcop.com/solebox?pid=dwvar_01808119_212=45%201%2F3{EU}
+       ==> https://qt.polarcop.com/solebox?pid=dwvar_01808119_212=45%201%2F3
 
 [URL]: ==> https://qt.polarcop.com/solebox?key={{product_id}}
        ==> https://qt.polarcop.com/solebox?key=01808119
