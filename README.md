@@ -23,7 +23,7 @@ https://qt.polarcop.com?<parameters_here>
 ```
 **Points:**
  - If you wish to use the `random` value for optional parameters **do not** provide them.
- - To use `PT` append `start=true` as the parameter 
+ - To use `PT` append `start=false` as the parameter 
 
 | Parameter |  Description              | Required?              | Default              |
 |-----------|---------------------------|------------------------|----------------------|
@@ -83,6 +83,8 @@ e.g https://www.solebox.com/en_GB/p/adidas_consortium-424_pro_model-bntora-01808
 
 **N.B.** 
  - When providing a link for solebox, the region within the url is stripped and replaced according to the profile region. Therefore, providing region specific links is not required.
+ - For sizing we will attempt to match an approximate value from the available stock and user profile. E.g if the size `US10` restocked and the user profile is `United Kingdom` we will first check for sizes matching `UK10` if it's not available we will default to `US10`. For the safest option, please try and provide EU sizing.
+ 
 
 ## WoodWood
 | Allowed | Parameter | Notes
