@@ -61,7 +61,7 @@ e.g https://www.yeezysupply.com/product/FW6345
 |---------|-----------|-----------
 | ✅      | `key`     | URL Only
 | ✅      | `pid`     | SID Only
-| ✅      | `size`    | e.g `11{US}` or `45{EU}` or `10{UK}`
+| ✅      | `size`    | e.g 11
 | ❌      | `colour`  | 
 | ❌      | `category`| 
 
@@ -83,7 +83,6 @@ e.g https://www.solebox.com/en_GB/p/adidas_consortium-424_pro_model-bntora-01808
 
 **N.B.** 
  - When providing a link for solebox, the region within the url is stripped and replaced according to the profile region. Therefore, providing region specific links is not required.
- - When providing the `size` param  for key please ensure you include the correct identifier e.g `{UK}`, `{US}` or `{EU}`
 
 ## WoodWood
 | Allowed | Parameter | Notes
