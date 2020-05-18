@@ -217,4 +217,4 @@ e.g https://www.thehipstore.co.uk/product/astorflex-rough-out-ettoflex/214036/
 
 
 ## Notice
-The documentation is accurate as of `May 16th 2020`, for further details please join our faq discord: https://discord.gg/3VNH4AE for more details, alternatively you can email our support email: support{@}polarcop.com
+The documentation is accurate as of `May 18th 2020`, for further details please join our faq discord: https://discord.gg/3VNH4AE for more details, alternatively you can email our support email: support{@}polarcop.com
