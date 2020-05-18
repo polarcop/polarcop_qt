@@ -5,6 +5,8 @@ This version of quick tasks supports builds from `1.0.16` onwards and supports b
 
 Polar Cop quick tasks allows anyone to quickly create and start tasks for Polar Cop's iOS platform. 
 
+**For integration help please dm offline#1977 on discord or dm @rish1s on twitter.**
+
 ### Supported Sites
 - [Yeezy Supply](#yeezysupply)
 - [Solebox](#solebox)
@@ -61,7 +63,7 @@ e.g https://www.yeezysupply.com/product/FW6345
 |---------|-----------|-----------
 | ✅      | `key`     | URL Only
 | ✅      | `pid`     | SID Only
-| ✅      | `size`    | e.g 11
+| ✅      | `size`    | e.g 43 (EU Size Only)
 | ❌      | `colour`  | 
 | ❌      | `category`| 
 
@@ -83,7 +85,7 @@ e.g https://www.solebox.com/en_GB/p/adidas_consortium-424_pro_model-bntora-01808
 
 **N.B.** 
  - When providing a link for solebox, the region within the url is stripped and replaced according to the profile region. Therefore, providing region specific links is not required.
- - For sizing we will attempt to match an approximate value from the available stock and user profile. E.g if the size `US10` restocked and the user profile is `United Kingdom` we will first check for sizes matching `UK10` if it's not available we will default to `US10`. For the safest option, please try and provide EU sizing.
+ - For sizing we will attempt to match the value from the available stock and user profile. E.g if the size `US10` restocked and the user profile is `United Kingdom` we will first check for sizes matching `UK10` if it's not available we will default to `US10`. For the safest option, please try and provide EU sizing.
  
 
 ## WoodWood
