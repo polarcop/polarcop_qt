@@ -21,7 +21,7 @@ Polar Cop quick tasks allows anyone to quickly create and start tasks for Polar 
 Polar Cop `QT`& `PT` requests must be passed as url query parameters to the `qt.polarcop.com`domain.
 *(URL chaining is supported)*
 ```http
-https://qt.polarcop.com/<store_here>/?<parameters_here>
+https://qt.polarcop.com/<store_here>?<parameters_here>
 ```
 **Points:**
  - If you wish to use the `random` value for optional parameters **do not** provide them.
