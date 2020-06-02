@@ -21,7 +21,7 @@ Polar Cop quick tasks allows anyone to quickly create and start tasks for Polar 
 Polar Cop `QT`& `PT` requests must be passed as url query parameters to the `qt.polarcop.com`domain.
 *(URL chaining is supported)*
 ```http
-https://qt.polarcop.com?<parameters_here>
+https://qt.polarcop.com/<store_here>/?<parameters_here>
 ```
 **Points:**
  - If you wish to use the `random` value for optional parameters **do not** provide them.
@@ -217,4 +217,4 @@ e.g https://www.thehipstore.co.uk/product/astorflex-rough-out-ettoflex/214036/
 
 
 ## Notice
-The documentation is accurate as of `May 18th 2020`, for further details please join our faq discord: https://discord.gg/3VNH4AE for more details, alternatively you can email our support email: support{@}polarcop.com
+The documentation is accurate as of `June 2nd 2020`, for further details please join our faq discord: https://discord.gg/3VNH4AE for more details, alternatively you can email our support email: support{@}polarcop.com
