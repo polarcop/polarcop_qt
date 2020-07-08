@@ -37,6 +37,18 @@ https://qt.polarcop.com/<store_here>?<parameters_here>
 | `mode`    |  Task mode                | Optional               |  *site dependant*    |
 | `start`   |  Should Tasks Auto Start  | Optional               |  `true`              |
 
+### Modes
+Please note all modes are case sensitive.
+| KEY                | Sites Supported?                                               |
+|--------------------|----------------------------------------------------------------|
+| `Request`          | `supreme`, `woodwood`                                          |
+| `Browser`          | `yeezysupply`                                                  |
+| `Safe_PayPal`      | `solebox`                                                      |
+| `Backend`          | `footpatrol`, `size`, `jdsports`, `thehipstore:`               |
+| `Backend_PayPal`   |  `footpatrol`, `size`, `jdsports`, `thehipstore`               |
+| `Fast_Frontend`    | `footpatrol`, `size`, `jdsports`, `thehipstore `, `finishline` |
+| `Cart`             |  `asos`                                                        |
+
 ## YeezySupply
 | Allowed | Parameter | Notes
 |---------|-----------|-----------
@@ -217,4 +229,4 @@ e.g https://www.thehipstore.co.uk/product/astorflex-rough-out-ettoflex/214036/
 
 
 ## Notice
-The documentation is accurate as of `June 2nd 2020`, for further details please join our faq discord: https://discord.gg/3VNH4AE for more details, alternatively you can email our support email: support{@}polarcop.com
+The documentation is accurate as of `July 8th 2020`, for further details please join our faq discord: https://discord.gg/3VNH4AE for more details, alternatively you can email our support email: support{@}polarcop.com
