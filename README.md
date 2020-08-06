@@ -80,7 +80,8 @@ e.g https://www.asos.com/fred-perry/fred-perry-embroidered-logo-t-shirt-in-black
 | ❌      | `category`| 
 | ✅      | `mode`    | `Fast_Frontend`
 
-
+**STORES**:
+`footpatrol`, `size`, `jdsports` and `thehipstore`
 ```
 [PATH]: ==> https://qt.polarcop.com/footpatrol
         ==> https://qt.polarcop.com/size
@@ -114,7 +115,8 @@ e.g https://www.footpatrol.com/product/white-adidas-originals-x-424-sc-premiere/
 | ❌      | `category`| 
 | ✅      | `mode`    | `Backend`, `Backend_PayPal`
 
-
+**STORES**:
+`footpatrol`, `size`, `jdsports` and `thehipstore`
 ```
 [PATH]: ==> https://qt.polarcop.com/footpatrol
         ==> https://qt.polarcop.com/size
