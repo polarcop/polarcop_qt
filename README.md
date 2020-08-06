@@ -189,6 +189,25 @@ e.g https://www.supremenewyork.com/shop/jackets/jji786yum/yn27h51l8
        ==> https://qt.polarcop.com/woodwood?key=https://www.supremenewyork.com/shop/jackets/jji786yum/yn27h51l8
 ```
 
+## SVD
+| Allowed | Parameter | Notes
+|---------|-----------|-----------
+| ✅      | `key`     | URL Only
+| ❌      | `pid`     | 
+| ✅      | `size`    | e.g `M`, `US 5`
+| ❌      | `colour`  | 
+| ❌      | `category`| 
+
+
+```
+[PATH]: ==> https://qt.polarcop.com/svd
+
+e.g https://www.sivasdescalzo.com/en/stance-crew-sock-x-billie-eilish-u558b19gri-ye2
+
+[URL]: ==> https://qt.polarcop.com/woodwood?key={{product_url}}
+       ==> https://qt.polarcop.com/woodwood?key=https://www.sivasdescalzo.com/en/stance-crew-sock-x-billie-eilish-u558b19gri-ye2
+```
+
 ## YeezySupply
 | Allowed | Parameter | Notes
 |---------|-----------|-----------
