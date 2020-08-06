@@ -186,8 +186,8 @@ e.g https://www.solebox.com/en_GB/p/adidas_consortium-424_pro_model-bntora-01808
 
 e.g https://www.supremenewyork.com/shop/jackets/jji786yum/yn27h51l8
 
-[URL]: ==> https://qt.polarcop.com/woodwood?key={{product_url}}
-       ==> https://qt.polarcop.com/woodwood?key=https://www.supremenewyork.com/shop/jackets/jji786yum/yn27h51l8
+[URL]: ==> https://qt.polarcop.com/supreme?key={{product_url}}
+       ==> https://qt.polarcop.com/supreme?key=https://www.supremenewyork.com/shop/jackets/jji786yum/yn27h51l8
 ```
 
 ## SVD
@@ -205,8 +205,8 @@ e.g https://www.supremenewyork.com/shop/jackets/jji786yum/yn27h51l8
 
 e.g https://www.sivasdescalzo.com/en/stance-crew-sock-x-billie-eilish-u558b19gri-ye2
 
-[URL]: ==> https://qt.polarcop.com/woodwood?key={{product_url}}
-       ==> https://qt.polarcop.com/woodwood?key=https://www.sivasdescalzo.com/en/stance-crew-sock-x-billie-eilish-u558b19gri-ye2
+[URL]: ==> https://qt.polarcop.com/svd?key={{product_url}}
+       ==> https://qt.polarcop.com/svd?key=https://www.sivasdescalzo.com/en/stance-crew-sock-x-billie-eilish-u558b19gri-ye2
 ```
 
 ## YeezySupply
