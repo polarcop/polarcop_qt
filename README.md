@@ -13,6 +13,7 @@ Polar Cop quick tasks allows anyone to quickly create and start tasks for Polar 
 - [Mesh Backend](#meshbe)
 - [Solebox](#solebox)
 - [Supreme](#supreme)
+- [Sivasdescalzo](#svd)
 - [Yeezy Supply](#yeezysupply)
 
 ## Format
