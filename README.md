@@ -1,14 +1,15 @@
 ![](https://github.com/polarcop/polarcop_qt/blob/master/polarcop_qt.png)
 
 ## Usage
-This version of quick tasks supports builds from `1.0.33` onwards and supports both `QT`(Quick Tasks) and `PT` (Premade Tasks)
+This version of quick tasks supports builds from `1.0.33` onwards and supports both `QT`(Quick Tasks) and `PT` (Premade Tasks).
 
-Polar Cop quick tasks allows anyone to quickly create and start tasks for Polar Cop's iOS platform. 
+Polar Cop QT allows anyone to quickly create and start tasks for Polar Cop's iOS platform. 
 
-**For integration help please dm offline#1977 on discord or dm @rish1s on twitter.**
+**For integration help, please contact us via email support@polarcop.com or live chat: https://polarcop.com**
 
 ### Supported Sites
 - [Asos](#asos)
+- [Footlocker](#footlockereu)
 - [Mesh Frontend](#meshfe)
 - [Mesh Backend](#meshbe)
 - [Solebox](#solebox)
@@ -38,15 +39,25 @@ https://qt.polarcop.com/<store_here>?<parameters_here>
 
 ### Modes
 Please note all modes are case sensitive.
-| KEY                | Sites Supported?                                               |
-|--------------------|----------------------------------------------------------------|
-| `Request`          | `supreme`, `svd`                                               |
-| `Browser`          | `yeezysupply`                                                  |
-| `Safe_PayPal`      | `solebox`                                                      |
-| `Backend`          | `footpatrol`, `size`, `jdsports`, `thehipstore:`               |
-| `Backend_PayPal`   | `footpatrol`, `size`, `jdsports`, `thehipstore`                |
-| `Fast_Frontend`    | `footpatrol`, `size`, `jdsports`, `thehipstore `               |
-| `Cart`             |  `asos`                                                        |
+| KEY                  | Sites Supported?                                               |
+|----------------------|----------------------------------------------------------------|
+| `Request`            | `supreme`, `svd`, `footlocker`                                 |
+| `Safe_Request`       | `supreme`                                                      |
+| `Fast_Safe`          | `supreme`                                                      |
+| `Browser`            | `yeezysupply`                                                  |
+| `Safe_PayPal`        | `solebox`                                                      |
+| `Safe_Backend`       | `footpatrol`, `size`, `jdsports`, `thehipstore`                |
+| `Safe_Backend_PayPal`| `footpatrol`, `size`, `jdsports`, `thehipstore`                |
+| `Backend`            | `footpatrol`, `size`, `jdsports`, `thehipstore`                |
+| `Backend_PayPal`     | `footpatrol`, `size`, `jdsports`, `thehipstore`                |
+| `Backend_2`          | `footpatrol`, `size`, `jdsports`, `thehipstore`                |
+| `Backend_2_PayPal`   | `footpatrol`, `size`, `jdsports`, `thehipstore`                |
+| `Frontend`           | `footpatrol`, `size`, `jdsports`, `thehipstore`                |
+| `Frontend_PayPal`    | `footpatrol`, `size`, `jdsports`, `thehipstore`                |
+| `Frontend_2`         | `footpatrol`, `size`, `jdsports`, `thehipstore`                |
+| `Frontend_2_PayPal`  | `footpatrol`, `size`, `jdsports`, `thehipstore`                |
+| `Cart`               |  `asos`                                                        |
+| `Fast_Cart`          |  `asos`                                                        |
 
 ## Asos
 | Allowed | Parameter | Notes
@@ -65,11 +76,33 @@ e.g https://www.asos.com/fred-perry/fred-perry-embroidered-logo-t-shirt-in-black
 [PID]: ==> https://qt.polarcop.com/asos?pid={{product_id}}
        ==> https://qt.polarcop.com/asos?pid=20291607
 
-[URL]: ==> https://qt.polarcop.com/yeezysupply?key={{product_url}}
-       ==> https://qt.polarcop.com/yeezysupply?key=https://www.asos.com/polar/cop/prd/20291607
-       ==> https://qt.polarcop.com/yeezysupply?key=https://www.asos.com/dk/fred-perry/fred-perry-embroidered-logo-t-shirt-in-black/prd/20291607
+[URL]: ==> https://qt.polarcop.com/asos?key={{product_url}}
+       ==> https://qt.polarcop.com/asos?key=https://www.asos.com/polar/cop/prd/20291607
+       ==> https://qt.polarcop.com/asos?key=https://www.asos.com/dk/fred-perry/fred-perry-embroidered-logo-t-shirt-in-black/prd/20291607
 ```
 **N.B** Where possible specify the region in URL, see third url example (`?key=https://www.asos.com/dk/....`)
+
+## FootlockerEU
+| Allowed | Parameter | Notes
+|---------|-----------|-----------
+| ✅      | `key`     | URL Only
+| ✅      | `pid`     | PID Only
+| ✅      | `size`    | e.g `35`(OLD) or `US 5` (NEW)
+| ❌      | `colour`  | 
+| ❌      | `category`| 
+
+```
+[PATH]: ==> https://qt.polarcop.com/footlockereu
+
+e.g https://www.footlocker.co.uk/en/p/nike-tuned-1-men-shoes-104419?v=314206086804
+
+[PID]: ==> https://qt.polarcop.com/footlockereu?pid={{product_id}}
+       ==> https://qt.polarcop.com/footlockereu?pid=314206086804
+
+[URL]: ==> https://qt.polarcop.com/footlockereu?key={{product_url}}
+       ==> https://qt.polarcop.com/footlockereu?key=https://www.footlocker.co.uk/en/p/nike-tuned-1-men-shoes-104419?v=314206086804
+```
+**N.B** Region is inferred by profile, so does not required to be set. Also ensure you **provide a SKU** and **not the size PID**
 
 ## MeshFE
 | Allowed | Parameter | Notes
@@ -79,7 +112,7 @@ e.g https://www.asos.com/fred-perry/fred-perry-embroidered-logo-t-shirt-in-black
 | ✅      | `size`    | e.g `11`
 | ❌      | `colour`  | 
 | ❌      | `category`| 
-| ✅      | `mode`    | `Fast_Frontend`
+| ✅      | `mode`    | `Frontend`, `Frontend_PayPal`, `Frontend_2`, `Frontend_2_PayPal`
 
 **STORES**:
 `footpatrol`, `size`, `jdsports` and `thehipstore`
@@ -91,20 +124,20 @@ e.g https://www.asos.com/fred-perry/fred-perry-embroidered-logo-t-shirt-in-black
 
 e.g https://www.footpatrol.com/product/white-adidas-originals-x-424-sc-premiere/346956_footpatrolcom/
 
-[SID]: ==> https://qt.polarcop.com/footpatrol?pid={{product_variant_id}}&mode=Fast_Frontend
-       ==> https://qt.polarcop.com/footpatrol?pid=346951_footpatrolcom.001469792&mode=Fast_Frontend
+[SID]: ==> https://qt.polarcop.com/footpatrol?pid={{product_variant_id}}&mode=Frontend
+       ==> https://qt.polarcop.com/footpatrol?pid=346951_footpatrolcom.001469792&mode=Frontend
 
-[PID]: ==> https://qt.polarcop.com/footpatrol?key={{product_id}}&mode=Fast_Frontend
-       ==> https://qt.polarcop.com/footpatrol?key=346956_footpatrolcom&mode=Fast_Frontend
+[PID]: ==> https://qt.polarcop.com/footpatrol?key={{product_id}}&mode=Frontend
+       ==> https://qt.polarcop.com/footpatrol?key=346956_footpatrolcom&mode=Frontend
 
-[URL]: ==> https://qt.polarcop.com/footpatrol?key={{product_url}}&mode=Fast_Frontend
-       ==> https://qt.polarcop.com/footpatrol?key=https://www.footpatrol.com/product/white-adidas-originals-x-424-sc-premiere/346956_footpatrolcom&mode=Fast_Frontend
+[URL]: ==> https://qt.polarcop.com/footpatrol?key={{product_url}}&mode=Frontend
+       ==> https://qt.polarcop.com/footpatrol?key=https://www.footpatrol.com/product/white-adidas-originals-x-424-sc-premiere/346956_footpatrolcom&mode=Frontend
 ```
 
 **N.B.** 
  - If you do not have the full url you may also provide the url as follows: ` https://qt.polarcop.com/footpatrol?key=https://www.footpatrol.com/product/polarcop_com/{{product_id}}`
  - Supplying either `pid` or `key` is permitted at this time, for best practise we suggest following the guidelines as above.
- - Ensure you pass a frontend mode e.g `&mode=Fast_Frontend`
+ - Ensure you pass a frontend mode e.g `&mode=Frontend`
  
  ## MeshBE
 | Allowed | Parameter | Notes
@@ -114,7 +147,7 @@ e.g https://www.footpatrol.com/product/white-adidas-originals-x-424-sc-premiere/
 | ✅      | `size`    | e.g `11`
 | ❌      | `colour`  | 
 | ❌      | `category`| 
-| ✅      | `mode`    | `Backend`, `Backend_PayPal`
+| ✅      | `mode`    | `Safe_Backend`, `Safe_Backend_PayPal`, `Backend`, `Backend_PayPal`, `Backend_2`, `Backend_2_PayPal`
 
 **STORES**:
 `footpatrol`, `size`, `jdsports` and `thehipstore`
@@ -174,20 +207,27 @@ e.g https://www.solebox.com/en_GB/p/adidas_consortium-424_pro_model-bntora-01808
 ## Supreme
 | Allowed | Parameter | Notes
 |---------|-----------|-----------
-| ✅      | `key`     | URL Only
-| ❌      | `pid`     | 
+| ❌      | `key`     | 
+| ✅      | `pid`     | STYLE ID ONLY
 | ✅      | `size`    | e.g `small`, `UK 5` or `US 5`
-| ❌      | `colour`  | 
-| ❌      | `category`| 
+| ✅      | `colour`  | 
+| ✅       | `category`| 
 
 
 ```
 [PATH]: ==> https://qt.polarcop.com/supreme
 
-e.g https://www.supremenewyork.com/shop/jackets/jji786yum/yn27h51l8
+e.g https://www.supremenewyork.com/mobile#products/305798
 
-[URL]: ==> https://qt.polarcop.com/supreme?key={{product_url}}
-       ==> https://qt.polarcop.com/supreme?key=https://www.supremenewyork.com/shop/jackets/jji786yum/yn27h51l8
+[URL]: ==> https://qt.polarcop.com/supreme?key=305798
+       ==> https://qt.polarcop.com/supreme?key=305798&size=medium
+       ==> https://qt.polarcop.com/supreme?key=305798&colour=navy
+       ==> https://qt.polarcop.com/supreme?key=305798&size=medium&colour=navy
+
+[KEY]: ==> https://qt.polarcop.com/supreme?key=tagless&category=Accessories
+       ==> https://qt.polarcop.com/supreme?key=tagless&category=Accessories&size=medium
+       ==> https://qt.polarcop.com/supreme?key=tagless&category=Accessories&colour=white
+       ==> https://qt.polarcop.com/supreme?key=tagless&category=Accessories&size=medium&colour=white
 ```
 
 ## SVD
@@ -231,4 +271,4 @@ e.g https://www.yeezysupply.com/product/FW6345
 ```
 
 ## Notice
-The documentation is accurate as of `Aug 6th 2020`, for further details please join our faq discord: https://discord.gg/3VNH4AE for more details, alternatively you can email our support email: support{@}polarcop.com
+The documentation is accurate as of `Mar 23rd 2021`, for further details please join our faq discord: https://discord.gg/3VNH4AE for more details, alternatively you can email our support email: support{@}polarcop.com
