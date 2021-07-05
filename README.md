@@ -12,6 +12,8 @@ Polar Cop QT allows anyone to quickly create and start tasks for Polar Cop's iOS
 - [Footlocker](#footlockereu)
 - [Mesh Frontend](#meshfe)
 - [Mesh Backend](#meshbe)
+- [Mytheresa](#mytheresa)
+- [Office & Offspring](#office-and-offspring)
 - [Solebox](#solebox)
 - [Supreme](#supreme)
 - [Sivasdescalzo](#svd)
@@ -173,6 +175,56 @@ e.g https://www.footpatrol.com/product/white-adidas-originals-x-424-sc-premiere/
  - If you do not have the full url you may also provide the url as follows: ` https://qt.polarcop.com/footpatrol?key=https://www.footpatrol.com/product/polarcop_com/{{product_id}}`
  - Supplying either `pid` or `key` is permitted at this time, for best practise we suggest following the guidelines as above.
  - Ensure you pass a frontend mode e.g `&mode=Backend` or `&mode=Backend_PayPal`
+
+## Mytheresa
+| Allowed | Parameter | Notes
+|---------|-----------|-----------
+| ✅      | `key`     | URL
+| ✅      | `pid`     | URL Only
+| ✅      | `size`    | e.g `UK_ 11`, `US 11`, `AU 11`, `EU 35`
+| ❌      | `colour`  | 
+| ❌      | `category`| 
+| ✅      | `mode`    | `Request`
+
+```
+[PATH]: ==> https://qt.polarcop.com/mytheresa
+
+e.g https://www.mytheresa.com/en-au/tod-s-gommino-driving-shoes-1895902.html
+
+[URL]: ==> https://qt.polarcop.com/offspring?key={{product_url}}
+       ==> https://qt.polarcop.com/offspring?key=https://www.mytheresa.com/en-au/tod-s-gommino-driving-shoes-1895902.html
+```
+
+**N.B.** 
+ - Supplying either `pid` or `key` is permitted at this time, for best practise we suggest following the guidelines as above.
+ 
+## Office and Offspring
+| Allowed | Parameter | Notes
+|---------|-----------|-----------
+| ✅      | `key`     | PID / URL
+| ✅      | `pid`     | Product ID Only
+| ✅      | `size`    | e.g `11` and `EU 11`
+| ❌      | `colour`  | 
+| ❌      | `category`| 
+| ✅      | `mode`    | `Request`
+
+**STORES**:
+`office`, and `offspring`
+```
+[PATH]: ==> https://qt.polarcop.com/office
+        ==> https://qt.polarcop.com/offspring
+
+e.g https://www.offspring.co.uk/view/product/offspring_catalog/7,908/4143215954
+
+[PID]: ==> https://qt.polarcop.com/offspring?pid={{product_variant_id}}
+       ==> https://qt.polarcop.com/offspring?pid=4143215954
+
+[URL]: ==> https://qt.polarcop.com/offspring?key={{product_url}}
+       ==> https://qt.polarcop.com/offspring?key=https://www.offspring.co.uk/view/product/offspring_catalog/7,908/4143215954
+```
+
+**N.B.** 
+ - Supplying either `pid` or `key` is permitted at this time, for best practise we suggest following the guidelines as above.
  
 ## Solebox
 | Allowed | Parameter | Notes
